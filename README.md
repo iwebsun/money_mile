@@ -2,22 +2,23 @@
 Money Mile
 
 # First Time User Git CLI
-git init
+$ git init
 
-git status
+$ git status
 
-git config --global user.email "you@example.com"
+$ git config --global user.email "you@example.com"
 
-git config --global user.name "your username"
-git add -A
+$ git config --global user.name "your username"
 
-git commit -m "first time laravel commit"
+$ git add -A
 
-git remote add origin <rep-name>
+$ git commit -m "first time laravel commit"
 
-git pull origin master
+$ git remote add origin <rep-name>
 
-git push -u origin master
+$ git pull origin master
+
+$ git push -u origin master
 
 
 # Git CLI
@@ -36,3 +37,9 @@ $ git branch name
 $ git pull origin master
 
 $ git push -u origin master
+
+# Git Version
+
+$ git --version
+
+git version 2.7.4
