@@ -19,6 +19,9 @@ $ composer --version
 
 Composer version 1.6.5 2018-05-04 11:44:59
 
+# Update Composer
+$ composer update
+
 # Laravel Version
 $ php artisan --version
 
@@ -27,7 +30,7 @@ Laravel Framework 5.5.41
 # Laravel run
 $ php artisan serve
 
-# Laravl UP & Down for maintenance
+# Laravl UP & Down for Maintenance
 $ php artisan up
 
 $ php artisan down
