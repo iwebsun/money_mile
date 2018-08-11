@@ -1,4 +1,38 @@
-# money_miler
+# Git Version
+$ git --version
+
+git version 2.7.4
+
+# PHP Version
+$ php --version
+
+PHP 7.0.30-0ubuntu0.16.04.1 (cli) ( NTS )
+
+Copyright (c) 1997-2017 The PHP Group
+
+Zend Engine v3.0.0, Copyright (c) 1998-2017 Zend Technologies
+
+    with Zend OPcache v7.0.30-0ubuntu0.16.04.1, Copyright (c) 1999-2017, by Zend Technologies
+
+# Composer Version
+$ composer --version
+
+Composer version 1.6.5 2018-05-04 11:44:59
+
+# Laravel Version
+$ php artisan --version
+
+Laravel Framework 5.5.41
+
+# Laravel run
+$ php artisan serve
+
+# Laravl UP & Down for maintenance
+$ php artisan up
+
+$ php artisan down
+
+# money_mile repo
 Money Mile
 
 # First Time User Git CLI
@@ -37,9 +71,3 @@ $ git branch name
 $ git pull origin master
 
 $ git push -u origin master
-
-# Git Version
-
-$ git --version
-
-git version 2.7.4
