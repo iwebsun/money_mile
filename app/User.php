@@ -1,6 +1,6 @@
 <?php
 
-namespace MoneyMile;
+namespace App;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
@@ -15,7 +15,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'username', 'password',
+        'social_id', 'social_name', 'name', 'email', 'mobile', 'password',
     ];
 
     /**
@@ -26,4 +26,11 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+    
+    /**
+        Verify User
+    */
+    public function verifyUser() {
+        return $this->hasOne('App\VerifyUser');
+    }
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace MoneyMile\Providers;
+namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 

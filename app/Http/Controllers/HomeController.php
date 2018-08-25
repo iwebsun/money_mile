@@ -1,29 +1,20 @@
 <?php
 
-namespace MoneyMile\Http\Controllers;
+namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
 
 class HomeController extends Controller
 {
     /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
+		Call Search listing
+    */
 
-    /**
-     * Show the application dashboard.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index() {
+	public function searchListing() {
+		return view('frontend.search');	
+	}
 
-        return view('dashboard');
-    }
+	public function searchBCApi() {
+		return 'vipin';
+	}
 }

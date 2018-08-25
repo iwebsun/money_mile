@@ -30,9 +30,26 @@ return [
     ],
 
     'stripe' => [
-        'model' => MoneyMile\User::class,
+        'model' => App\User::class,
         'key' => env('STRIPE_KEY'),
         'secret' => env('STRIPE_SECRET'),
     ],
-
+    
+    'facebook' => [
+        'client_id' => env('facebook_client_id'),
+        'client_secret' => env('facebook_client_secret'),
+        'redirect' => env('facebook_redirect'),
+    ],
+    
+    'linkedin' => [
+        'client_id' => env('linkedin_client_id'),
+        'client_secret' => env('linkedin_client_secret'),
+        'redirect' => env('linkedin_redirect'),
+    ],
+    
+    'google' => [
+        'client_id' => env('google_client_id'),
+        'client_secret' => env('google_client_secret'),
+        'redirect' => env('google_redirect'),
+    ],
 ];

@@ -1,8 +1,8 @@
 <?php
 
-namespace MoneyMile\Http\Controllers\Auth;
+namespace App\Http\Controllers\Auth;
 
-use MoneyMile\Http\Controllers\Controller;
+use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ResetsPasswords;
 
 class ResetPasswordController extends Controller
@@ -25,7 +25,7 @@ class ResetPasswordController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/dashboard';
+    protected $redirectTo = '/account';
 
     /**
      * Create a new controller instance.
@@ -35,5 +35,15 @@ class ResetPasswordController extends Controller
     public function __construct()
     {
         $this->middleware('guest');
+    }
+
+    /**
+        Validation Rules
+    */
+    protected function rules() {
+        return [
+            'email'     => 'required|string|email|max:255|unique:users',
+            'g-recaptcha-response' => 'required|captcha',
+        ];
     }
 }
